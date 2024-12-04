@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 6
+  number: 7
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37 or win]
 
@@ -27,7 +27,7 @@ requirements:
     - numpy
   run:
     - python
-    - astropy
+    - astropy-base
     - {{ pin_compatible('numpy') }}
     - beautifulsoup4
     - six
